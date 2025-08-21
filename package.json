@@ -1,0 +1,22 @@
+{
+  "name": "nature-connect-market",
+  "version": "1.0.0",
+  "description": "A simple farmer-to-customer marketplace with a nature-themed UI",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "farm",
+    "marketplace",
+    "nature",
+    "ecommerce"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
+

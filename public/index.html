@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Connect Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="leaf-logo" aria-hidden="true">🌿</div>
+          <span>Nature Connect Market</span>
+        </div>
+        <nav class="nav">
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+          <a href="/admin.html">Farmer Admin</a>
+          <button id="cartButton" class="cart-button" aria-label="Open cart">🛒 <span id="cartCount">0</span></button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Fresh from the farm to your table</h1>
+        <p>Support local farmers and enjoy seasonal produce. Sustainably grown, lovingly delivered.</p>
+        <a class="primary-btn" href="#shop">Start shopping</a>
+      </div>
+    </section>
+
+    <main class="container">
+      <section id="shop" class="shop-section">
+        <h2>Shop Produce</h2>
+        <div id="productGrid" class="product-grid"></div>
+      </section>
+
+      <section id="about" class="about-section">
+        <h2>About Nature Connect</h2>
+        <p>
+          We connect local farmers with conscious consumers. Every purchase supports sustainable agriculture and community well-being.
+        </p>
+      </section>
+    </main>
+
+    <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="closeCart" class="icon-btn" aria-label="Close cart">✕</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">Total: <span id="cartTotal">$0.00</span></div>
+        <form id="checkoutForm" class="checkout-form">
+          <input type="text" name="name" placeholder="Full name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="address" placeholder="Delivery address" required />
+          <button type="submit" class="primary-btn full">Place order</button>
+        </form>
+        <div id="checkoutMessage" class="checkout-message" role="status"></div>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Nature Connect Market • Grown with care 🌱</p>
+      </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+  </body>
+  </html>
+
